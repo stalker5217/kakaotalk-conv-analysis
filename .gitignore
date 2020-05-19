@@ -1,0 +1,6 @@
+*.png
+.venv/
+.vscode/
+font/
+*.whl
+*.txt

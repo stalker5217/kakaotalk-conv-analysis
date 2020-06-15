@@ -1,6 +1,7 @@
 import re
 import numpy as np
 import json
+import os
 
 from konlpy.tag import Okt
 from collections import Counter
@@ -9,7 +10,7 @@ from PIL import Image
 
 # read config
 def readConfig():
-	with open('config.json', 'r') as f:
+	with open(os.path.relpath('./rsc/config.json'), 'r') as f:
 		config = json.load(f)
 
 		global raw_file_path
@@ -78,7 +79,7 @@ def visualize(noun_list):
 			max_font_size=300)
 
 	wc.generate_from_frequencies(dict(noun_list))
-	wc.to_file('wordcloud.png')
+	wc.to_file('./wordcloud.png')
 
 
 if __name__ == '__main__':

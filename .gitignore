@@ -1,6 +1,11 @@
-*.png
 .venv/
 .vscode/
+
+raw_log/
+mask_img/
 font/
+
+*.png
+*.jpg
 *.whl
 *.txt

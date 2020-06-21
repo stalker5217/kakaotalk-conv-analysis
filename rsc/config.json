@@ -1,5 +1,5 @@
 {
-	"raw_file_path" : "./raw_log/log.txt",
-	"img_path" : "./mask_img/pepe.jpg",
+	"raw_file_path" : "./raw_log/log3.txt",
+	"img_path" : "./mask_img/alice_mask.png",
 	"font_path" : "./font/malgunbd.ttf"
 }

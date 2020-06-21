@@ -53,6 +53,10 @@ def refine_message():
 def extract_noun(msg_list):	
 	nlpy = Okt()
 	nouns = nlpy.nouns(" ".join(msg_list))
+	# 한 글자 삭제
+	for noun in nouns:
+		if len(noun) == 1:
+			nouns.remove(noun)
 	count = Counter(nouns)
 	noun_list = count.most_common(700)
 	
